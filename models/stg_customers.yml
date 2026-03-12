@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_stg
+    database: dev_db
+    schema: hr
+    tables: 
+      - name: customers
+   
