@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: dev_db
+    schema: hr
+    tables:
+      - name: employees
+      - name: departments
+      - name: orders
