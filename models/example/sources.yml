@@ -7,4 +7,8 @@ sources:
     tables:
       - name: employees
       - name: departments
+      - name: nation
+      - name: emp_1
+      - name: orders_1
+      - name: events
       - name: orders
