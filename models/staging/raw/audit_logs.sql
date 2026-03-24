@@ -1,5 +1,4 @@
-{{ config(materialized='incremental',
-    unique_key='employee_id' ) 
+{{ config(materialized='incremental')
 }}
 
 with cte as 

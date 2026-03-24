@@ -5,10 +5,30 @@ sources:
     database: dev_db
     schema: hr
     tables:
+
       - name: employees
+        columns:
+          - name: employee_id
+            tests:
+              - not_null
+              - unique
+
+          - name: department_id
+            tests:
+              - not_null
+              - relationships:
+                  to: source('raw', 'departments')
+                  field: department_id
+
       - name: departments
+        columns:
+          - name: department_id
+            tests:
+              - not_null
+
       - name: nation
       - name: emp_1
       - name: orders_1
       - name: events
       - name: orders
+      - name: emp_2
